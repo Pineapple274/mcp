@@ -1,0 +1,19 @@
+[project]
+name = "mcp-http-server-baidu-maps"
+version = "0.0.1"
+description = "MCP HTTP Server Baidu Maps"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "baidu-maps" }]
+maintainers = [{ name = "Pineapple274", email = "yuyangyang3838@gmail.com" }]
+keywords = ["http", "mcp", "map", "baidu"]
+license = { text = "MIT" }
+dependencies = [
+    "httpx>=0.28.1",
+    "logging>=0.4.9.6",
+    "mcp[cli]>=1.6.0",
+    "pydantic>=2.11.2",
+]
+
+[project.scripts]
+mcp-server-baidu-maps = "mcp_http_server_baidu_maps:main"
